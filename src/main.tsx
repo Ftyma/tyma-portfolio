@@ -1,14 +1,24 @@
 import ReactDOM from "react-dom/client";
-import React from "react";
+
 //import { createHashRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import "./index.css";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
+// @material-tailwind/react
+import { ThemeProvider } from "@material-tailwind/react";
+
+const root = ReactDOM.createRoot(document.getElementById("root")!);
+root.render(
+  <ThemeProvider>
     <App />
-  </React.StrictMode>
+  </ThemeProvider>
 );
+
+// ReactDOM.createRoot(document.getElementById("root")!).render(
+//   <ThemeProvider>
+//     <App />
+//   </ThemeProvider>
+// );
 
 // const router = createHashRouter([{ path: "/*", element: <App /> }]);
 

@@ -3,31 +3,33 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Project from "./components/Project";
+import "./App.css";
 
 const App = () => {
   return (
     <>
-      <Navbar />
+      <div className="bg-primary pb-40">
+        <Navbar />
+        <div className="pt-40">
+          <About />
+        </div>
 
-      <div>
-        <About />
-      </div>
-
-      <div>
         <div className={`h-0.5 w-full bg-dimWhite mt-20 mb-5`} />
-        <Experience />
-      </div>
+        <div className="">
+          <Experience />
+        </div>
 
-      <div>
-        <div className={`h-0.5 w-full bg-dimWhite mt-20 mb-5`} />
-        <Project />
-      </div>
+        <div className="">
+          <div className={`h-0.5 w-full bg-dimWhite mt-20 mb-5`} />
+          <Project />
+        </div>
 
-      {/* <Routes>
+        {/* <Routes>
         <Route path="/about" Component={About} />
         <Route path="/experience" Component={Experience} />
         <Route path="/project" Component={Project} />
       </Routes> */}
+      </div>
     </>
   );
 };
