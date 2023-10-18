@@ -1,8 +1,26 @@
-import { RouterProvider } from "react-router-dom";
-import Router from "./routes";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Navbar from "./components/Navbar";
+import Project from "./components/Project";
 
 function App() {
-  return <RouterProvider router={Router} />;
+  return (
+    <div>
+      <Navbar />
+
+      <div>
+        <About />
+      </div>
+
+      <div>
+        <Experience />
+      </div>
+
+      <div>
+        <Project />
+      </div>
+    </div>
+  );
 }
 
 export default App;
