@@ -6,7 +6,7 @@ import LayoutMain from "../layout";
 
 const Router = createBrowserRouter([
   {
-    path: "/",
+    path: "/home",
     element: <LayoutMain />,
     children: [
       { path: "/about", element: <About /> },
