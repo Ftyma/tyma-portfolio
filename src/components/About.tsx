@@ -1,21 +1,66 @@
+import Typewriter from "./Typewriter";
+import { IconButton } from "@material-tailwind/react";
+
+const bio = [
+  {
+    id: 1,
+    desc: "I am 3rd year Computer Engineering student at Sirindhorn International Institute of Technology",
+  },
+  {
+    id: 2,
+    desc: " I enjoy hiking, problem solving, connecting with people, and everything in between.",
+  },
+];
+const contactIcon = [
+  {
+    icon: "fa-brands fa-linkedin-in",
+    title: "LinkedIn",
+    url: `https://www.linkedin.com/in/featthimabou/`,
+  },
+  {
+    icon: "fa-solid fa-envelope",
+    title: "Email",
+    url: `mailto:${"featthimabou1@gmail.com"}`,
+  },
+  {
+    icon: "fa-brands fa-github",
+    title: "GitHub",
+    url: `https://github.com/Ftyma`,
+  },
+];
+
 const About = () => {
   return (
     <section id="about">
       <div className=" grid sm:grid-cols-2 w-11/12 h-100 mx-auto">
         <div className="col-6 text-center sm:text-right my-auto">
-          <h1 className="text-white text-5xl font-comfortaa">
-            Hi, I'm Featthima
-          </h1>
+          <div>
+            <h1 className="text-white text-5xl font-comfortaa font-extrabold">
+              <Typewriter
+                text="Hi, I'm Featthima"
+                delay={150}
+                infinite={false}
+              />
+            </h1>
+          </div>
+
+          {bio.map(({ desc }) => (
+            <h1 className="text-dimWhite text-md font-comfortaa">
+              <br />
+              {desc}
+            </h1>
+          ))}
+
           <br />
-          <h1 className="text-white text-xl font-comfortaa">
-            I am 3rd year Computer Engineering student at Sirindhorn
-            International Institute of Technology
-          </h1>
-          <br />
-          <h1 className="text-white text-xl font-comfortaa">
-            I enjoy hiking, problem solving, connecting with people, and
-            everything in between.
-          </h1>
+          <div className="">
+            {contactIcon.map(({ icon, url }) => (
+              <a href={url}>
+                <IconButton className=" text-2xl mx-2 bg-blue-gray-300">
+                  <i className={icon}></i>
+                </IconButton>
+              </a>
+            ))}
+          </div>
         </div>
         <img
           className="w-[400px] rounded-lg col-6 ml-14"
