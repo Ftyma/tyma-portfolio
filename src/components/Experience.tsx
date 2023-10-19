@@ -13,34 +13,39 @@ const Experience = () => {
       value: "ThaiBev",
       position: "Digital Experience Intern",
       date: "Jun 2023 - Jul 2023 ",
-      desc: `It really matters and then like it really doesn't matter.
-          What matters is the people who are sparked by it. And the people
-          who are like offended by it, it doesn't matter.`,
+      desc: [
+        "Worked on the design and implementation of user-centered digital interfaces, contributing to improved user satisfaction and optimized online customer journeys.",
+        "Assisted senior developer on an e-commerce web application integrated in Line application using MERN stack.",
+      ],
     },
     {
       label: "CamSolution Technology",
       value: "CamSolution Technology",
       position: "Frontend Developer Intern",
       date: "Jun 2022 - Sept 2023",
-      desc: `Because it's about motivating the doers. Because I'm here
-          to follow my dreams and inspire other people to follow their dreams, too.`,
+      desc: [
+        "Collaborated with the developer team to build responsive and user-friendly web applications using Vue.js framework and Javascript",
+        "Actively engaged in the agile development process, delivering features and updates on project milestones to business clients and the team.",
+      ],
     },
     {
       label: "Huawei Seed4TheFuture",
       value: "Huawei Seed4TheFuture",
       position: "Cambodia Delegate",
       date: "Aug 2022",
-      desc: `We're not always in the position that we want to be at.
-          We're constantly growing. We're constantly making mistakes. We're
-          constantly trying to express ourselves and actualize our dreams.`,
+      desc: [
+        "Collaborated with a team of 5 in developing a map navigation mobile app prototype to address road accessibility of wheelchair users in Cambodia",
+        "Selected as the top7 among 24 projects in Thailand and achieved a Moonshot award at the APAC level",
+      ],
     },
     {
       label: "Edmonds College",
       value: "Edmonds College",
       position: "Green Team Event Coordinator",
       date: "Aug 2019 - Jun 2020 ",
-      desc: `Because it's about motivating the doers. Because I'm here
-          to follow my dreams and inspire other people to follow their dreams, too.`,
+      desc: [
+        "Coordinated over 10 high-impact events that engaged more than 100 students on campus, effectively promoting eco-conscious practices and environmental awareness.",
+      ],
     },
   ];
   return (
@@ -49,7 +54,7 @@ const Experience = () => {
         Experience
       </h1>
 
-      <div className="w-10/12 justify-items-center mx-auto ">
+      <div className="w-9/12 justify-items-center mx-auto">
         <Tabs
           value="ThaiBev"
           orientation="vertical"
@@ -59,31 +64,39 @@ const Experience = () => {
             className="w-72 bg-transparent"
             indicatorProps={{
               className:
-                " bg-transparent border-b-2 border-secondary shadow-none rounded-none",
+                " bg-transparent border-r-2 w-34 border-secondary shadow-none rounded-none",
             }}
           >
             {data.map(({ label, value }) => (
               <Tab
                 key={value}
                 value={value}
-                className="text-dimWhite justify-start  font-comfortaa"
+                className="text-dimWhite justify-start font-comfortaa"
               >
                 {label}
               </Tab>
             ))}
           </TabsHeader>
-          <TabsBody>
-            {data.map(({ value, desc, position, date }) => (
+          <TabsBody className="ml-9">
+            {data.map((list) => (
               <TabPanel
-                key={value}
-                value={value}
-                className="py-0  font-comfortaa"
+                key={list.value}
+                value={list.value}
+                className="py-0 font-comfortaa"
               >
                 <h1 className="text-xl text-white font-extrabold">
-                  {position}
+                  {list.position}{" "}
+                  <span className="text-red-200 pl-3">@{list.label}</span>
                 </h1>
-                <h3 className="text-dimWhite mt-2 mb-4">{date}</h3>
-                <h3 className="text-dimWhite opacity-70">{desc}</h3>
+                <h3 className="text-dimWhite mt-2 mb-4">{list.date}</h3>
+
+                <ul className="pl-5" style={{ listStyleType: "disc" }}>
+                  {list.desc.map((descJob, i) => (
+                    <li className="text-dimWhite opacity-70" key={i}>
+                      {descJob}
+                    </li>
+                  ))}
+                </ul>
               </TabPanel>
             ))}
           </TabsBody>

@@ -33,7 +33,7 @@ const About = () => {
   return (
     <section id="about">
       <div className=" grid sm:grid-cols-2 w-11/12 h-100 mx-auto">
-        <div className="col-6 text-center sm:text-right my-auto">
+        <div className="col-6 text-center sm:text-right my-auto mb-4">
           <div>
             <h1 className="text-white text-5xl font-comfortaa font-extrabold">
               <Typewriter
@@ -62,6 +62,8 @@ const About = () => {
             ))}
           </div>
         </div>
+
+        {/* profile pic */}
         <img
           className="w-[400px] rounded-lg col-6 ml-14"
           alt="profile"
