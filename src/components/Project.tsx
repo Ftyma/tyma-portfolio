@@ -40,7 +40,7 @@ const projectList = [
 const Project = () => {
   return (
     <section id="project">
-      <h1 className="font-comfortaa text-white text-4xl ml-10">Project</h1>
+      <h1 className="font-comfortaa text-white text-4xl ml-10">Projects</h1>
 
       <div className="grid md:grid-cols-3 grid-cols-1 w-10/12 justify-items-center mx-auto">
         {projectList.map(({ title, desc, icon, url, stack }) => (

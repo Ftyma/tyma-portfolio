@@ -53,7 +53,7 @@ const Experience = () => {
 
   const initialActiveTab = "ThaiBev";
   const [activeTab, setActiveTab] = useState(initialActiveTab);
-  const isHorizontal = useMediaQuery("(max-width: 600px)");
+  const isHorizontal = useMediaQuery("(max-width: 700px)");
 
   return (
     <section id="experience">
@@ -61,7 +61,7 @@ const Experience = () => {
         Experience
       </h1>
 
-      <div className="w-9/12 justify-items-center mx-auto">
+      <div className="w-9/12 justify-items-center mx-auto font-extrabold">
         <Tabs
           value={activeTab}
           orientation={isHorizontal ? null : "vertical"}
@@ -70,8 +70,7 @@ const Experience = () => {
           <TabsHeader
             className={`bg-transparent ${isHorizontal ? "w-auto" : "w-72"}`}
             indicatorProps={{
-              className: `bg-transparent border-secondary shadow-none rounded-none ${
-                isHorizontal ? "border-b-2" : "border-r-2 w-34"
+              className: `bg-transparent border-pink shadow-none rounded-none border-r-2 w-34
               }`,
             }}
           >
@@ -80,8 +79,8 @@ const Experience = () => {
                 key={value}
                 value={value}
                 onClick={() => setActiveTab(value)}
-                className={` justify-start font-comfortaa text-sm my-1 ${
-                  activeTab === value ? "text-pink" : "text-dimWhite"
+                className={` justify-start font-comfortaa text-md font-extrabold my-1 ${
+                  activeTab === value ? "text-pink" : "text-white"
                 }`}
               >
                 {label}
@@ -95,15 +94,15 @@ const Experience = () => {
                 value={list.value}
                 className="py-0 font-comfortaa"
               >
-                <h1 className="text-xl text-white font-extrabold">
+                <h1 className="text-xl text-white font-extrabold mt-10 sm:mt-5">
                   {list.position}{" "}
-                  <span className="text-lightPink pl-3 ">@{list.label}</span>
+                  <span className="text-pink pl-3 ">@{list.label}</span>
                 </h1>
-                <h3 className="text-dimWhite mt-2 mb-4">{list.date}</h3>
+                <h3 className="text-white mt-2 mb-4">{list.date}</h3>
 
                 <ul className="pl-5" style={{ listStyleType: "disc" }}>
                   {list.desc.map((descJob, i) => (
-                    <li className="text-dimWhite opacity-70" key={i}>
+                    <li className="text-white opacity-80" key={i}>
                       {descJob}
                     </li>
                   ))}
