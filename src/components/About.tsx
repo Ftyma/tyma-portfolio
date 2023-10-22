@@ -8,7 +8,7 @@ const bio = [
   },
   {
     id: 2,
-    desc: " I enjoy hiking, problem solving, connecting with people, and everything in between.",
+    desc: " I'm a firm believer in experimentation and exploring new things, taking on new challenges while applying creative thinking",
   },
 ];
 const contactIcon = [
@@ -36,11 +36,10 @@ const About = () => {
         <div className="col-6 text-center sm:text-right my-auto mb-4">
           <div>
             <h1 className="text-white text-5xl font-comfortaa font-extrabold">
-              <Typewriter
-                text="Hi, I'm Featthima"
-                delay={150}
-                infinite={false}
-              />
+              <span>Hi, I'm </span>
+              <span className="text-pink">
+                <Typewriter text="Featthima " delay={150} infinite={false} />
+              </span>
             </h1>
           </div>
 
@@ -55,7 +54,7 @@ const About = () => {
           <div className="">
             {contactIcon.map(({ icon, url }) => (
               <a href={url}>
-                <IconButton className=" text-2xl mx-2 bg-blue-gray-300">
+                <IconButton className=" text-2xl mx-2 bg-lightPink">
                   <i className={icon}></i>
                 </IconButton>
               </a>

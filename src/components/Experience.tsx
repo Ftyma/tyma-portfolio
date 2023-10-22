@@ -5,6 +5,8 @@ import {
   Tab,
   TabPanel,
 } from "@material-tailwind/react";
+import { useState } from "react";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 const Experience = () => {
   const data = [
@@ -48,6 +50,11 @@ const Experience = () => {
       ],
     },
   ];
+
+  const initialActiveTab = "ThaiBev";
+  const [activeTab, setActiveTab] = useState(initialActiveTab);
+  const isHorizontal = useMediaQuery("(max-width: 600px)");
+
   return (
     <section id="experience">
       <h1 className="font-comfortaa text-white text-4xl ml-10 font-extrabold ">
@@ -56,22 +63,26 @@ const Experience = () => {
 
       <div className="w-9/12 justify-items-center mx-auto">
         <Tabs
-          value="ThaiBev"
-          orientation="vertical"
-          className="mt-10 justify-center mx-auto"
+          value={activeTab}
+          orientation={isHorizontal ? null : "vertical"}
+          className={isHorizontal ? "" : "mt-10 justify-center mx-auto"}
         >
           <TabsHeader
-            className="w-72 bg-transparent"
+            className={`bg-transparent ${isHorizontal ? "w-auto" : "w-72"}`}
             indicatorProps={{
-              className:
-                " bg-transparent border-r-2 w-34 border-secondary shadow-none rounded-none",
+              className: `bg-transparent border-secondary shadow-none rounded-none ${
+                isHorizontal ? "border-b-2" : "border-r-2 w-34"
+              }`,
             }}
           >
             {data.map(({ label, value }) => (
               <Tab
                 key={value}
                 value={value}
-                className="text-dimWhite justify-start font-comfortaa"
+                onClick={() => setActiveTab(value)}
+                className={` justify-start font-comfortaa text-sm my-1 ${
+                  activeTab === value ? "text-pink" : "text-dimWhite"
+                }`}
               >
                 {label}
               </Tab>
@@ -86,7 +97,7 @@ const Experience = () => {
               >
                 <h1 className="text-xl text-white font-extrabold">
                   {list.position}{" "}
-                  <span className="text-red-200 pl-3">@{list.label}</span>
+                  <span className="text-lightPink pl-3 ">@{list.label}</span>
                 </h1>
                 <h3 className="text-dimWhite mt-2 mb-4">{list.date}</h3>
 

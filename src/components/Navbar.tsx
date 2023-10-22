@@ -7,13 +7,13 @@ let navList = [
 ];
 const Navbar = () => {
   return (
-    <nav className="w-full fixed top-0 z-10 flex text-white py-4 text-lg font-comfortaa justify-end bg-primary ">
+    <nav className="w-full fixed top-0 z-10 flex text-white py-4 text-lg  font-comfortaa justify-end bg-primary ">
       <ul className="flex">
         {navList.map((nav) => (
           // <Link to={list.url} key={i} className="mx-3">
           //   {list.title}
           // </Link>
-          <li key={nav.id} className="cursor-pointer mx-5">
+          <li key={nav.id} className="cursor-pointer mx-5 hover:text-pink">
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
