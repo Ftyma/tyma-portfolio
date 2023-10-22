@@ -12,7 +12,7 @@ const App = () => {
       <div className="bg-lightBlue pb-40 wrapper">
         <Navbar />
         <header>
-          <img src="src/assets/blue-moon.png" className="background" />
+          <img src="public/blue-moon.png" className="background" />
 
           <div className="pt-40">
             <Home />
