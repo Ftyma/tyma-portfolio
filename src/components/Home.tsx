@@ -2,7 +2,7 @@ import Typewriter from "./Typewriter";
 import { IconButton } from "@material-tailwind/react";
 
 const bio = [
-  "I am 3rd year Computer Engineering student at SIIT, Thammasat University. I'm have great interest in full-stack development and artificial intelligence.",
+  "I am 3rd year Computer Engineering student at SIIT, Thammasat University. I'm have great interest in full-stack development, AI, and sustainability.",
 ];
 
 const contactIcon = [

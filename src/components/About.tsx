@@ -1,18 +1,17 @@
 const techList = [
-  "React.js",
-  "Node.js",
+  "ReactJs",
+  "NodeJs",
   "HTML&CSS",
   "Javascript",
   "Typescript",
   "Java",
+  "PHP",
 ];
 
 const intro =
   "I'm currently a junior in <span style='color:#C46F98;'> Computer Engineering</span> with a minor in <span style='color:#C46F98;'>Artificial Intelligence.</span> I'm a firm believer in experimentation and exploring new things, taking on new challenges while applying creative thinking";
 const interest =
   "Beside school, I enjoy hiking, connecting with people, and everything in-between.";
-
-const language = "Also, I speak English, Khmer and a bit of Thai.";
 
 const About = () => {
   return (
@@ -36,9 +35,6 @@ const About = () => {
           </ul>
 
           <br />
-          <h1>
-            {interest} {language}
-          </h1>
         </div>
 
         {/* profile pic */}
