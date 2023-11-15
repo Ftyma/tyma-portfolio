@@ -8,32 +8,25 @@ import {
 
 const projectList = [
   {
-    title: " Project 1",
-    desc: "Because it&apos;s about motivating the doers. Because I&apos;m here to follow my dreams and inspire others.",
+    title: " Amusigo",
+    desc: "A web application that connect students through the same music taste",
     icon: "fa-brands fa-github",
-    url: `https://github.com/Ftyma`,
-    stack: "Java, HTML, React",
+    url: `https://github.com/Ftyma/Amusigo`,
+    stack: "PHP, HTML, CSS, MySQL",
   },
   {
-    title: " Project 2",
-    desc: "Because it&apos;s about motivating the doers. Because I&apos;m here to follow my dreams and inspire others.",
+    title: " Ecommerce Web App",
+    desc: " A full stack application for B2B ecommerce website. This project was develop during my internship at ThaiBev.",
     icon: "fa-brands fa-github",
-    url: `https://github.com/Ftyma`,
-    stack: "Java, HTML, React",
+    url: `https://github.com/Ftyma/client_frontend`,
+    stack: "MongoDB, Express, ReactJs, NodeJs",
   },
   {
-    title: " Project 3",
-    desc: "Because it&apos;s about motivating the doers. Because I&apos;m here to follow my dreams and inspire others.",
+    title: " Future Letter",
+    desc: "Send letter to your future-self",
     icon: "fa-brands fa-github",
-    url: `https://github.com/Ftyma`,
-    stack: "Java, HTML, React",
-  },
-  {
-    title: " Project 4",
-    desc: "Because it&apos;s about motivating the doers. Because I&apos;m here to follow my dreams and inspire others.",
-    icon: "fa-brands fa-github",
-    url: `https://github.com/Ftyma`,
-    stack: "Java, HTML, React",
+    url: `https://github.com/Ftyma/SafeShrine`,
+    stack: "MongoDB, Express, ReactJs, NodeJs",
   },
 ];
 
