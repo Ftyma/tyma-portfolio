@@ -35,16 +35,15 @@ const About = () => {
           </ul>
 
           <br />
+          <h1>{interest}</h1>
         </div>
 
         {/* profile pic */}
-
+        <img src="blue-moon.png" className="background" />
         <img
           className="w-[400px] rounded-lg col-6 ml-14 hidden sm:block"
           alt="profile"
-          src={
-            "https://img.freepik.com/free-photo/cute-woman-hold-hands-gesture-empty-spec-business-woman-concept-pink-background-3d-rendering_56104-1468.jpg?w=1060&t=st=1689320801~exp=1689321401~hmac=d7db2cd2d299dbf3608febfb95076224c29680b1d3bb05c3957aad79d758f718"
-          }
+          src="portrait.jpg"
         />
       </div>
     </section>
