@@ -39,7 +39,7 @@ const About = () => {
         </div>
 
         {/* profile pic */}
-        <img src="blue-moon.png" className="background" />
+
         <img
           className="w-[400px] rounded-lg col-6 ml-14 hidden sm:block"
           alt="profile"
