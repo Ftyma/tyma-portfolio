@@ -10,14 +10,14 @@ const projectList = [
   {
     title: " Amusigo",
     desc: "A web application that connect students through the same music taste",
-    icon: "fa-brands fa-github",
+    icon: "fa-light fa-globe fa-brands fa-github",
     url: `https://github.com/Ftyma/Amusigo`,
     stack: "PHP, HTML, CSS, MySQL",
   },
   {
     title: " Ecommerce Web App",
     desc: " A full stack application for B2B ecommerce website. This project was develop during my internship at ThaiBev.",
-    icon: ["fa-brands fa-github", "fa-light fa-globe"],
+    icon: "fa-brands fa-github",
     url: `https://github.com/Ftyma/client_frontend`,
     stack: "MongoDB, Express, ReactJs, NodeJs",
   },
