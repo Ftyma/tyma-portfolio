@@ -17,7 +17,7 @@ const projectList = [
   {
     title: " Ecommerce Web App",
     desc: " A full stack application for B2B ecommerce website. This project was develop during my internship at ThaiBev.",
-    icon: "fa-brands fa-github",
+    icon: ["fa-brands fa-github", "fa-light fa-globe"],
     url: `https://github.com/Ftyma/client_frontend`,
     stack: "MongoDB, Express, ReactJs, NodeJs",
   },
