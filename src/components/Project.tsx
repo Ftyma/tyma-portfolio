@@ -27,7 +27,9 @@ const projectList = [
     title: " Future Letter",
     desc: "Send letter to your future-self",
     icon: "fa-brands fa-github",
-    url: `https://github.com/Ftyma/SafeShrine`,
+    webIcon: "fa-solid fa-globe",
+    url: `https://github.com/Ftyma/FutureLetter`,
+    url1: `https://future-letter.netlify.app`,
     stack: "MongoDB, Express, ReactJs, NodeJs",
   },
 ];
