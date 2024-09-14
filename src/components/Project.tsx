@@ -8,6 +8,15 @@ import {
 
 const projectList = [
   {
+    title: " The Dad Jokes",
+    desc: "The Dad Joke is a web application that users can search and submit for random dad joke, using API from icanhazdadjoke.com ",
+    icon: "fa-brands fa-github",
+    webIcon: "fa-solid fa-globe",
+    url: `https://github.com/Ftyma/dadjokes`,
+    url1: `https://thedadjokes.netlify.app/`,
+    stack: "React, Typescript",
+  },
+  {
     title: " Amusigo",
     desc: "A web application that connect students through the same music taste",
     icon: "fa-brands fa-github",
