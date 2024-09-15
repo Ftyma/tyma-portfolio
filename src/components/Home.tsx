@@ -2,9 +2,8 @@ import Typewriter from "./Typewriter";
 import { IconButton } from "@material-tailwind/react";
 
 const bio = [
-  "I am 3rd year Computer Engineering student at SIIT, Thammasat University. I'm have great interest in full-stack development, AI, and sustainability.",
+  "I'm a 4th-year Computer Engineering student, and I'm interested in full-stack software development, data science, and sustainability.",
 ];
-
 const contactIcon = [
   {
     icon: "fa-brands fa-linkedin-in",
@@ -40,7 +39,12 @@ const Home = () => {
 
           <br />
           <h1 className="mx-auto text-white text-md font-comfortaa opacity-95 w-7/12 sm:w-6/12">
-            {bio}
+            {bio.map((line, index) => (
+              <span key={index}>
+                {line}
+                <br />
+              </span>
+            ))}
           </h1>
 
           <br />

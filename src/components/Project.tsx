@@ -9,7 +9,7 @@ import {
 const projectList = [
   {
     title: " The Dad Jokes",
-    desc: "The Dad Joke is a web application that users can search and submit for random dad joke, using API from icanhazdadjoke.com ",
+    desc: "The Dad Jokes is a web application that users can search and submit for random dad jokes. Using API from icanhazdadjoke.com",
     icon: "fa-brands fa-github",
     webIcon: "fa-solid fa-globe",
     url: `https://github.com/Ftyma/dadjokes`,
@@ -18,7 +18,7 @@ const projectList = [
   },
   {
     title: " Amusigo",
-    desc: "A web application that connect students through the same music taste",
+    desc: "Amusigo is a web application that connect students that has the similar music taste.",
     icon: "fa-brands fa-github",
     webIcon: "fa-solid fa-globe",
     url: `https://github.com/Ftyma/Amusigo`,
@@ -34,19 +34,19 @@ const projectList = [
   },
   {
     title: " Future Letter",
-    desc: "Send letter to your future-self",
+    desc: "A web applications where user can send letter to their future-self [⚙️ in-progress] ",
     icon: "fa-brands fa-github",
     webIcon: "fa-solid fa-globe",
     url: `https://github.com/Ftyma/FutureLetter`,
     url1: `https://future-letter.netlify.app`,
-    stack: "MongoDB, Express, ReactJs, NodeJs",
+    stack: "MongoDB, Express, NodeJs, ReactJs, ThreeJs",
   },
 ];
 
 const Project = () => {
   return (
     <section id="project">
-      <h1 className="font-comfortaa text-white text-4xl ml-10">Projects</h1>
+      <h1 className="font-comfortaa text-white text-4xl ml-10">/projects</h1>
 
       <div className="grid md:grid-cols-3 grid-cols-1 w-10/12 justify-items-center mx-auto">
         {projectList.map(({ title, desc, icon, webIcon, url, url1, stack }) => (
@@ -73,7 +73,7 @@ const Project = () => {
               </Typography>
               <Typography>{desc}</Typography>
             </CardBody>
-            <CardFooter className="pt-0">Stack:{stack}</CardFooter>
+            <CardFooter className="pt-0">Built with: {stack}</CardFooter>
           </Card>
         ))}
       </div>

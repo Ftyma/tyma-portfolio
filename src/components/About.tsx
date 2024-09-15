@@ -1,30 +1,30 @@
 const techList = [
-  "ReactJs",
-  "NodeJs",
-  "HTML&CSS",
   "Javascript",
+  "SQL",
   "Typescript",
-  "Java",
+  "NodeJs",
+  "HTML/CSS",
   "PHP",
+  "React",
 ];
 
 const intro =
-  "I'm currently a junior in <span style='color:#C46F98;'> Computer Engineering</span> with a minor in <span style='color:#C46F98;'>Artificial Intelligence.</span> I'm a firm believer in experimentation and exploring new things, taking on new challenges while applying creative thinking";
+  "👩🏼‍🎓 I'm an international student from Cambodia 🇰🇭. Currently, pursuing <span style='color:#C46F98;'> Computer Engineering</span> degree at SIIT, Thammasat University.";
 const interest =
-  "Beside school, I enjoy hiking, connecting with people, and everything in-between.";
+  "Beside school, I enjoy hiking, cafe hopping, connecting with people, and everything in-between.";
 
 const About = () => {
   return (
     <section id="about" className="font-comfortaa">
       <h1 className="text-white text-4xl ml-10 font-extrabold mb-10">
-        About Me
+        /about me
       </h1>
 
       <div className="grid sm:grid-cols-2 text-white font-extrabold opacity-90 w-10/12 mx-auto justify-items-center">
         <div>
           <h1 dangerouslySetInnerHTML={{ __html: intro }}></h1>
           <br />
-          <h1>Technogies I have been working with:</h1>
+          <h1>💻 Technogies I have been working with:</h1>
 
           <ul className="grid grid-cols-2 w-8/12 list-disc list-inside">
             {techList.map((list, i) => (
@@ -35,7 +35,7 @@ const About = () => {
           </ul>
 
           <br />
-          <h1>{interest}</h1>
+          <h1>🌟 {interest}</h1>
         </div>
 
         {/* profile pic */}

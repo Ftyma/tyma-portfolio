@@ -11,13 +11,23 @@ import useMediaQuery from "../hooks/useMediaQuery";
 const Experience = () => {
   const data = [
     {
+      label: "Amity",
+      value: "Amity",
+      position: "Product Technicalist Intern",
+      date: "May 2024 - Aug 2024 ",
+      link: "https://www.amity.co/",
+      desc: [
+        "Documented and collaborated with DevOps Engineer to automated release-note process using Release Please",
+        "Supported QA teams by conducting manual testing on SDK & UIKit features",
+      ],
+    },
+    {
       label: "ThaiBev",
       value: "ThaiBev",
-      position: "Digital Experience Intern",
+      position: "Front-End Developer Intern",
       date: "Jun 2023 - Jul 2023 ",
       desc: [
-        "Worked on the design and implementation of user-centered digital interfaces, contributing to improved user satisfaction and optimized online customer journeys.",
-        "Assisted senior developer on an e-commerce web application integrated in Line application using MERN stack.",
+        "Worked with UX/UI and engineering teams on front-end of a B2B e-commerce platforms, using MERN stack.",
       ],
     },
     {
@@ -26,18 +36,28 @@ const Experience = () => {
       position: "Frontend Developer Intern",
       date: "Jun 2022 - Sept 2023",
       desc: [
-        "Collaborated with the developer team to build responsive and user-friendly web applications using Vue.js framework and Javascript",
-        "Actively engaged in the agile development process, delivering features and updates on project milestones to business clients and the team.",
+        "Collaborated with the developer team to build responsive and user-friendly web applications",
+        "Delivered features and updates on project milestones to business clients and the team.",
       ],
     },
     {
-      label: "Huawei Seed4TheFuture",
-      value: "Huawei Seed4TheFuture",
-      position: "Cambodia Delegate",
+      label: "Huawei Seed4TheFuture ",
+      value: "Tech4Good Hackathon",
+      position: "Tech4Good Hackathon",
       date: "Aug 2022",
       desc: [
         "Collaborated with a team of 5 in developing a map navigation mobile app prototype to address road accessibility of wheelchair users in Cambodia",
         "Selected as the top7 among 24 projects in Thailand and achieved a Moonshot award at the APAC level",
+      ],
+    },
+    {
+      label: "Schneider",
+      value: "Schneider",
+      position: "Go Green Hackathon",
+      date: "2023",
+      desc: [
+        "Developed a hotel energy conservation app, incentivizing guests to participate in sustainable practices through rewards and interactive features.",
+        "Awarded as Thailand Country Final Winner",
       ],
     },
     {
@@ -58,7 +78,7 @@ const Experience = () => {
   return (
     <section id="experience">
       <h1 className="font-comfortaa text-white text-4xl ml-10 font-extrabold ">
-        Experience
+        /experience
       </h1>
 
       <div className="w-9/12 justify-items-center mx-auto font-extrabold">
@@ -96,7 +116,9 @@ const Experience = () => {
               >
                 <h1 className="text-xl text-white font-extrabold mt-10 sm:mt-5">
                   {list.position}{" "}
-                  <span className="text-pink pl-3 ">@{list.label}</span>
+                  <a href={list.link}>
+                    <span className="text-pink pl-3 ">@{list.label}</span>
+                  </a>
                 </h1>
                 <h3 className="text-white mt-2 mb-4">{list.date}</h3>
 

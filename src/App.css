@@ -47,3 +47,16 @@ header {
     rgba(124, 181, 211, 0.15309873949579833) 64%
   );
 }
+a {
+  cursor: pointer;
+}
+a:hover {
+  color: #000 !important;
+  transform: scale(1.05);
+}
+
+img {
+  width: 400px;
+  height: 300px !important;
+  object-fit: cover;
+}
